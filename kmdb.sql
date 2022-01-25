@@ -69,7 +69,7 @@
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
 DROP TABLE IF EXISTS movies;
-DROP TABLE IF EXISTS actors;
+DROP TABLE IF EXISTS cast;
 
 -- Create new tables, according to your domain model
 -- TODO!
@@ -91,6 +91,7 @@ CREATE TABLE cast (
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
+
 INSERT INTO movies (
   title,
   year,
@@ -138,7 +139,50 @@ INSERT INTO cast (
 VALUES (
   "1",
   "Christian Bale",
-  "Bruce Wayne",
+  "Bruce Wayne"
+);
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "1",
+  "Michael Caine",
+  "Alfred"
+);
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "1",
+  "Liam Neeson",
+  "Ra's Al Ghul"
+);
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "1",
+  "Katie Holmes",
+  "Rachel Dawes"
+);
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "1",
+  "Gary Oldman",
+  "Commissioner Gordon"
 );
 
 
@@ -161,10 +205,9 @@ FROM movies;
 
 -- The SQL statement for the cast output
 -- TODO!
+
 SELECT movies.title, cast.actor, cast.character
-FROM movies INNER JOIN cast ON movies.id = cast.movie_id;
-
-
+FROM cast INNER JOIN movies ON movies.id = cast.movie_id;
 
 
 
