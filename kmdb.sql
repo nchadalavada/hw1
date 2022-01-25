@@ -76,7 +76,7 @@ DROP TABLE IF EXISTS actors;
 CREATE TABLE movies (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   title TEXT,
-  year,
+  year INTEGER
   rating TEXT,
   director TEXT
 );
@@ -91,7 +91,18 @@ CREATE TABLE actors (
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
-
+INSERT INTO movies (
+  title,
+  year,
+  rating,
+  director,
+)
+VALUES (
+  "Batman Begins",
+  "2013",
+  "PG-13"
+  "Christopher Nolan"
+);
 
 
 -- Prints a header for the movies output
@@ -101,6 +112,8 @@ CREATE TABLE actors (
 
 -- The SQL statement for the movies output
 -- TODO!
+SELECT title
+FROM movies;
 
 -- Prints a header for the cast output
 .print ""
