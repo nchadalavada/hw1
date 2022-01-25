@@ -316,8 +316,8 @@ FROM movies;
 -- The SQL statement for the cast output
 -- TODO!
 
-SELECT movies.title, cast.actor, cast.character
-FROM cast INNER JOIN movies ON movies.id = cast.movie_id;
+SELECT movies.title, actor, character
+FROM cast INNER JOIN movies ON movie_id = movies.id 
 
 
 
