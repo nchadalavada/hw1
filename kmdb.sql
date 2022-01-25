@@ -103,7 +103,7 @@ VALUES (
   "2005",
   "PG-13",
   "Christopher Nolan"
-);
+)
 
 INSERT INTO movies (
   title,
@@ -116,7 +116,7 @@ VALUES (
   "2008",
   "PG-13",
   "Christopher Nolan"
-);
+)
 
 INSERT INTO movies (
   title,
@@ -129,7 +129,7 @@ VALUES (
   "2012",
   "PG-13",
   "Christopher Nolan"
-);
+)
 
 INSERT INTO cast (
   movie_id,
@@ -140,7 +140,7 @@ VALUES (
   "1",
   "Christian Bale",
   "Bruce Wayne"
-);
+)
 
 INSERT INTO cast (
   movie_id,
@@ -151,7 +151,7 @@ VALUES (
   "1",
   "Michael Caine",
   "Alfred"
-);
+)
 
 INSERT INTO cast (
   movie_id,
@@ -162,7 +162,7 @@ VALUES (
   "1",
   "Liam Neeson",
   "Ra's Al Ghul"
-);
+)
 
 INSERT INTO cast (
   movie_id,
@@ -173,7 +173,8 @@ VALUES (
   "1",
   "Katie Holmes",
   "Rachel Dawes"
-);
+)
+
 INSERT INTO cast (
   movie_id,
   actor,
@@ -183,8 +184,117 @@ VALUES (
   "1",
   "Gary Oldman",
   "Commissioner Gordon"
-);
+)
 
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "2",
+  "Christian Bale",
+  "Bruce Wayne"
+)
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "2",
+  "Heath Ledger",
+  "Joker"
+)
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "2",
+  "Aaron Eckhart",
+  "Harvey Dent"
+)
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "2",
+  "Michael Caine",
+  "Alfred"
+)
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "2",
+  "Maggie Gyllenhaal",
+  "Rachel Dawes"
+)
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "3",
+  "Christian Bale",
+  "Bruce Wayne"
+)
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "3",
+  "Gary Oldman",
+  "Commissioner Gordon"
+)
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "3",
+  "Tom Hardy",
+  "Bane"
+)
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "3",
+  "Joseph Gordon-Levitt",
+  "John Blake"
+)
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "3",
+  "Anne Hathaway",
+  "Selina Kyle"
+);
 
 -- Prints a header for the movies output
 .print "Movies"
