@@ -92,6 +92,8 @@ CREATE TABLE actors (
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
 
+
+
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
