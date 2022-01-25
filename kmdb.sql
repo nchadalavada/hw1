@@ -76,12 +76,12 @@ DROP TABLE IF EXISTS actors;
 CREATE TABLE movies (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   title TEXT,
-  year INTEGER
+  year INTEGER,
   rating TEXT,
   director TEXT
 );
 
-CREATE TABLE actors (
+CREATE TABLE cast (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   movie_id INTEGER,
   actor TEXT,
@@ -95,13 +95,50 @@ INSERT INTO movies (
   title,
   year,
   rating,
-  director,
+  director
 )
 VALUES (
   "Batman Begins",
-  "2013",
-  "PG-13"
+  "2005",
+  "PG-13",
   "Christopher Nolan"
+);
+
+INSERT INTO movies (
+  title,
+  year,
+  rating,
+  director
+)
+VALUES (
+  "The Dark Knight",
+  "2008",
+  "PG-13",
+  "Christopher Nolan"
+);
+
+INSERT INTO movies (
+  title,
+  year,
+  rating,
+  director
+)
+VALUES (
+  "The Dark Knight Rises",
+  "2012",
+  "PG-13",
+  "Christopher Nolan"
+);
+
+INSERT INTO cast (
+  movie_id,
+  actor,
+  character
+)
+VALUES (
+  "1",
+  "Christian Bale",
+  "Bruce Wayne",
 );
 
 
@@ -112,7 +149,7 @@ VALUES (
 
 -- The SQL statement for the movies output
 -- TODO!
-SELECT title
+SELECT title, year, rating, director
 FROM movies;
 
 -- Prints a header for the cast output
@@ -124,6 +161,8 @@ FROM movies;
 
 -- The SQL statement for the cast output
 -- TODO!
+SELECT 
+
 
 
 
